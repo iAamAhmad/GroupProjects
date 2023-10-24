@@ -5,11 +5,12 @@ const SearchBar = (props) => {
 
   const handleTermChange = useCallback((event) => {
     setTerm(event.target.value);
+    
   }, []);
 
   const search = useCallback(() => {
     onSearch(term);
-  }, [props.onSearch, term]);
+  }, [onSearch, term]);
 
   return (
     <div className="flex flex-col items-center pt-4 mb-6 ">

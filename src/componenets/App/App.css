@@ -26,10 +26,12 @@ h2 {
   font-size: 1.55rem;
 }
 
+ /* background-image: url("https://img.freepik.com/premium-photo/3d-background-spotify-icon_318923-140.jpg?w=740");*/
+  
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
-  background-image: url("https://img.freepik.com/premium-photo/3d-background-spotify-icon_318923-140.jpg?w=740");
+ background-image: url("https://img.freepik.com/free-vector/hand-drawn-collage-design_23-2149543516.jpg?w=996&t=st=1698128950~exp=1698129550~hmac=996e57354f52e12baf0d30a1acda114027e0a4e6d692f27bde2223661727bb21");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
