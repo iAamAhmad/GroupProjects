@@ -26,7 +26,7 @@ const Playlist = (props) => {
             className='border-0 outline-none bg-transparent border-b border-gray-400 font-poppins text-2 text-white'
          />
          <button
-            className="w-full h-12 px-2 text-indigo-100 transition-colors duration-150 bg-neutral-900 rounded-full focus:shadow-outline hover:bg-indigo-800 mt-4"
+            className="w-full h-12 px-1 text-indigo-100 transition-colors duration-150 bg-indigo-950 rounded-full focus:shadow-outline hover:bg-indigo-800 mt-4"
             onClick={onSave}>
             SAVE TO SPOTIFY
          </button>
