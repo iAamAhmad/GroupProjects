@@ -4,6 +4,7 @@
 
 
 /*
+//orignal code
 
 
 const clientId = 'b181341102ad47be90cc04ba7f1f409c'; // Insert client ID here.
@@ -145,25 +146,25 @@ const Spotify = {
       const headers = { Authorization: `Bearer ${accessToken}` };
       let userId;
 
-      return axios('https://api.spotify.com/v1/me', { headers: headers }
+      return axios.get('https://api.spotify.com/v1/me', { headers: headers }
       ).then(response => {return response.data;}
       ).then(jsonResponse => {
          userId = jsonResponse.id;
-         return axios(`https://api.spotify.com/v1/users/${userId}/playlists`, {
-            headers: headers,
-            method: 'POST',
-            body: JSON.stringify({ name: name })
-         }).then(response =>{return response.data;}
+         return axios.post(`https://api.spotify.com/v1/users/${userId}/playlists`, 
+         { name: name },
+         { headers: headers }
+         ).then(response =>{return response.data;}
          ).then(jsonResponse => {
             const playlistId = jsonResponse.id;
-            return axios(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
-               headers: headers,
-               method: 'POST',
-               body: JSON.stringify({ uris: trackUris })
-            });
+            return axios.post(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`,
+            
+            { uris: trackUris },
+            { headers: headers }
+            );
          });
       });
    }
+
 };
 
 export default Spotify;
@@ -235,11 +236,14 @@ const Spotify = {
     ).then(response => response.data
     ).then(jsonResponse => {
       userId = jsonResponse.id;
-      return axios.post(`https://api.spotify.com/v1/users/${userId}/playlists`, { name: name }, { headers: headers }
+      return axios.post(`https://api.spotify.com/v1/users/${userId}/playlists`,
+       { name: name },
+        { headers: headers }
       ).then(response => response.data
       ).then(jsonResponse => {
         const playlistId = jsonResponse.id;
-        return axios.post(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, { uris: trackUris }, { headers: headers });
+        return axios.post(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`,
+         { uris: trackUris }, { headers: headers });
       });
     });
   }
