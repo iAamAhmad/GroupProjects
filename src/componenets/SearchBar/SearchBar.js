@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from "react";
+
 const SearchBar = (props) => {
+  
   const { onSearch } = props;
   const [term, setTerm] = useState("");
 
