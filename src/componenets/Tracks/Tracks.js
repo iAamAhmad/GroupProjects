@@ -37,7 +37,7 @@ const Track = (props) => {
 
   return (
     <div className="flex items-center border-b border-gray-300">
-      <div className="flex flex-col justify-center h-72">
+      <div className="flex flex-col justify-center h-32">
         <h3 className="mb-2.22">{track.name}</h3>
         <p className="text-0.83 font-light text-gray-300">
           {track.artist} | {track.album}
