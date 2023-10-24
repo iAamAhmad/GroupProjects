@@ -5,7 +5,7 @@ const SearchBar = (props) => {
 
   const handleTermChange = useCallback((event) => {
     setTerm(event.target.value);
-    console.log(term)
+    
   }, []);
 
   const search = useCallback(() => {
