@@ -28,6 +28,11 @@ const Spotify = {
   },
 
   search(term) {
+ // to resolve un-caught-error agar search bar ma kuch na likha ho aur search kr ra hon
+   if (term === '') {
+      return Promise.resolve('Enter song');
+    }
+//-------------------------------------------
     const accessToken = Spotify.getAccessToken();
     return axios.get(`https://api.spotify.com/v1/search?type=track&q=${term}`, {
       headers: {
@@ -51,7 +56,8 @@ const Spotify = {
 
   savePlaylist(name, trackUris) {
     if (!name || !trackUris.length) {
-      return;
+      return Promise.resolve(console.log("no data"));
+      
     }
 
     const accessToken = Spotify.getAccessToken();
