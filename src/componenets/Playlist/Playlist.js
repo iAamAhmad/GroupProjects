@@ -10,12 +10,12 @@ const Playlist = (props) => {
       },
       [onNameChange]
    );
- 
 
- 
+
+
    return (
       <div
-         className="flex flex-col items-center w-37 max-h-950 px-10 py-5 bg-opacity-70 bg-blue-900 shadow-md border-solid border-2 border-neutral-950">
+         className="flex flex-col items-center w-37 max-h-950 px-10 py-5 bg-opacity-70 bg-blue-900 shadow-md border-solid border-2 border-neutral-950 rounded-md">
          <input
             onChange={handleNameChange}
             placeholder={"New Playlist"}
@@ -34,7 +34,7 @@ const Playlist = (props) => {
          </button>
       </div>
    );
-   
+
 };
 
 export default Playlist;
