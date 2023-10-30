@@ -1,30 +1,34 @@
-# Getting Started with First Group Project.
+# Jamming Project 🎶
 
-## Available Scripts
+Welcome to our Jamming project! This project was completed as part of CodeAcademy's Challenge, under the guidance of our instructor, Sir Zubair Naeem.
 
-In the project directory, you can run:
+## Team Members
+- Muhammad Ahmad
+- Aiena Laraib
+- Ambreen
+- Asad Ali
+- Muhammad Talha
+- Ehtisham Ul Din
 
-### `npm start`
+## Overview
+Jamming is a web application that allows you to create and manage playlists using the Spotify API. You can search for your favorite tracks, add them to your playlists, and save those playlists to your Spotify account. It's all about bringing your music collection to life!
 
-Runs the app in the development mode.\
+## Technologies Used
+- React.js
+- Spotify Web API
+- React Redux
+- Tailwind CSS
+- Third Party Api Integration
+- JavaScript
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Features
+- Search and add songs to your playlist.
+- Create, edit, and delete custom playlists.
+- Authenticate with your Spotify account to save playlists.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about 
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-### `npm run build` fails to minify
-
-This section will start from Here:
-# GroupProjects-01
+## Getting Started
+To run this project locally, follow these steps:
+1. Clone the repository.
+2. Install the required dependencies.
+   ```bash
+   npm install
